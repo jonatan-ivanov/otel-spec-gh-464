@@ -14,7 +14,9 @@ repositories {
 }
 
 dependencies {
-	testImplementation platform('org.junit:junit-bom:5.+')
+	testImplementation platform('org.junit:junit-bom:5.7.+')
+
+	testImplementation("org.assertj:assertj-core:latest.release")
 	testImplementation 'org.junit.jupiter:junit-jupiter-api'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
